@@ -4,6 +4,7 @@ import AboutView from "@/views/about/AboutView.vue";
 import ContactsView from "@/views/contacts/ContactsView.vue";
 import DeliveryView from "@/views/delivery/DeliveryView.vue";
 import ServicesView from "@/views/services/ServicesView.vue";
+import CatalogView from "@/views/catalog/CatalogView.vue";
 
 const routerNames = {
     HomeView: HomeView,
@@ -11,6 +12,7 @@ const routerNames = {
     DeliveryView:DeliveryView,
     ServicesView: ServicesView,
     ContactsView: ContactsView,
+    CatalogView: CatalogView,
 }
 
 const router = createRouter({
@@ -40,6 +42,11 @@ const router = createRouter({
       path: '/services',
       name: 'services',
       component: routerNames.ServicesView
+    },
+    {
+      path: '/catalog',
+      name: 'catalog',
+      component: routerNames.CatalogView
     }
   ]
 })

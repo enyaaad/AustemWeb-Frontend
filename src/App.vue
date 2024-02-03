@@ -6,12 +6,12 @@ import AppNavbar from "@/components/AppNavbar.vue";
 <template id="app">
   <div class="d-flex-column">
     <app-navbar/>
-    <div>
+    <div style="width: 100%">
       <RouterView />
     </div>
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="sass">
 
 </style>
